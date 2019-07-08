@@ -28,12 +28,12 @@ RUN go get github.com/mdempsky/gocode \
 
 RUN code-server --install-extension ms-vscode.go \
   && code-server --install-extension peterjausovec.vscode-docker \
-  && echo "{
-    "files.autoSave": "afterDelay",
-    "editor.renderWhitespace": "all",
-    "go.autocompleteUnimportedPackages": true,
-    "go.coverOnSave": true,
-    "go.formatTool": "goimports",
-    "go.gocodeAutoBuild": true,
-    "go.useLanguageServer": true
+  && echo "{\
+    "files.autoSave": "afterDelay",\
+    "editor.renderWhitespace": "all",\
+    "go.autocompleteUnimportedPackages": true,\
+    "go.coverOnSave": true,\
+    "go.formatTool": "goimports",\
+    "go.gocodeAutoBuild": true,\
+    "go.useLanguageServer": true\
 }" > /home/coder/.local/share/code-server/User/settings.json
