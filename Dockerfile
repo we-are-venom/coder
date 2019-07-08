@@ -27,7 +27,7 @@ RUN go get github.com/mdempsky/gocode \
   && go get golang.org/x/lint/golint 
 
 RUN code-server --install-extension ms-vscode.go \
-  && code-server --install-extension peterjausovec.vscode-docker
+  && code-server --install-extension peterjausovec.vscode-docker \
   && echo "{
     "files.autoSave": "afterDelay",
     "editor.renderWhitespace": "all",
