@@ -14,4 +14,4 @@ ENV GOROOT=/usr/local/go
 
 ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-RUN code-server --install-extension ms-vscode.go && code-server --install-extension ms-azuretools.vscode-docker
+RUN code-server --install-extension ms-vscode.go && code-server --install-extension peterjausovec.vscode-docker
