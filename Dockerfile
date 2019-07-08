@@ -26,4 +26,14 @@ RUN go get github.com/mdempsky/gocode \
   && go get github.com/sqs/goreturns \
   && go get golang.org/x/lint/golint 
 
-RUN code-server --install-extension ms-vscode.go && code-server --install-extension peterjausovec.vscode-docker
+RUN code-server --install-extension ms-vscode.go \
+  && code-server --install-extension peterjausovec.vscode-docker
+  && echo "{
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "all",
+    "go.autocompleteUnimportedPackages": true,
+    "go.coverOnSave": true,
+    "go.formatTool": "goimports",
+    "go.gocodeAutoBuild": true,
+    "go.useLanguageServer": true
+}" > /home/coder/.local/share/code-server/User/settings.json
