@@ -1,0 +1,9 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "all",
+    "go.autocompleteUnimportedPackages": true,
+    "go.coverOnSave": true,
+    "go.formatTool": "goimports",
+    "go.gocodeAutoBuild": true,
+    "go.useLanguageServer": true
+}
